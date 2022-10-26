@@ -1,6 +1,6 @@
-# Svelte Typescript Chrome Extension Boilerplate
+# Cheap.gg (Extension) [WIP]
 
-Boilerplate for Chrome Extension Svelte Typescript project
+Cheap.gg is a service that finds cheap game keys and adds them to the Steam store. The extension portion of the app overlays a widget on top of Steam showing the cheapest key available.
 
 ## Features
 
@@ -15,10 +15,16 @@ Boilerplate for Chrome Extension Svelte Typescript project
 # install dependencies
 npm i
 
-# build files to `/dist` directory
+# build the content script to `/dist` directory
 # vite.build.watch rebuilds when modules have changed on disk
-npm run dev
+npm run dev:content 
+
+# in another terminal, build the rest of the app (background page, options page, popup page, etc)
+# this also rebuilds when changes are made 
+npm run dev:pages 
 ```
+
+*NOTE: `vite.config.content.ts` and `vite.config.ts` run concurrently
 
 ## Build
 
@@ -37,8 +43,3 @@ $ npm run build
 
 ![Example](https://wd.imgix.net/image/BhuKGJaIeLNPW9ehns59NfwqKxF2/vOu7iPbaapkALed96rzN.png?auto=format&w=571)
 
-## Pull Request/OS Contribution?
-1. Add Tailwind and DaisyUI to the boilerplate
-2. Add multiple Vite configs
-  - First, for building the pages (background, options, popup, etc)  
-  - Second, for injecting Svelte components onto the DOM via content script 
