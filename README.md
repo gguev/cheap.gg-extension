@@ -2,6 +2,8 @@
 
 Cheap.gg is a service that finds cheap game keys and adds them to the Steam store. The extension portion of the app overlays a widget on top of Steam showing the cheapest key available.
 
+Link to the website portion of app is [here](https://github.com/gguev/cheap.gg-website).
+
 ## Features
 
 -   [Svelte](https://svelte.dev/)
