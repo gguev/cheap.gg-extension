@@ -7,6 +7,8 @@ Cheap.gg is a service that finds cheap game keys and adds them to the Steam stor
 -   [Svelte](https://svelte.dev/)
 -   [TypeScript](https://www.typescriptlang.org/)
 -   [Vite](https://vitejs.dev/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [DaisyUI](https://daisyui.com/)
 -   [Chrome Extensions Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/)
 
 ## Development
