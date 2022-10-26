@@ -1,5 +1,13 @@
-import type { IStorage } from "src/types";
+import PriceCard from 'src/components/PriceCard.svelte'
+import '../../tailwind.css'
 
-chrome.storage.sync.get({ count: 0 } as IStorage, ({ count }: IStorage) => {
-    console.log("content", count);
-});
+const root = document.createElement('div')
+const anchor = document.querySelector('.game_area_purchase_game_wrapper')
+anchor.insertAdjacentElement('beforebegin', root)   
+
+const priceCard = new PriceCard({
+    target: root
+})
+
+export default priceCard
+

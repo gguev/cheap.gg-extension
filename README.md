@@ -36,3 +36,9 @@ $ npm run build
 3. Click the `LOAD UNPACKED` button and select the `/dist` directory.
 
 ![Example](https://wd.imgix.net/image/BhuKGJaIeLNPW9ehns59NfwqKxF2/vOu7iPbaapkALed96rzN.png?auto=format&w=571)
+
+## Pull Request/OS Contribution?
+1. Add Tailwind and DaisyUI to the boilerplate
+2. Add multiple Vite configs
+  - First, for building the pages (background, options, popup, etc)  
+  - Second, for injecting Svelte components onto the DOM via content script 

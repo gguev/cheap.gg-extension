@@ -14,24 +14,18 @@ export default defineConfig({
         },
     },
     build: {
-        emptyOutDir: false,
+      emptyOutDir: false,
         rollupOptions: {
             input: {
-                background: resolve(pagesDir, "background", "index.ts"),
-                //content: resolve(pagesDir, "content", "index.ts"),
-                options: resolve(pagesDir, "options", "index.html"),
-                popup: resolve(pagesDir, "popup", "index.html"),
+                content: resolve(pagesDir, "content", "index.ts"),
             },
             output: {
                 entryFileNames: (chunk) => `src/pages/${chunk.name}/index.js`,
+                format: "iife"
             },            
         },
     },
 });
 
-// content script needs to be outputted as 'iife'
-// other files don't need format
-
-// SOLUTIONS
-// create 2 vite configs 
-// edit 'npm run dev' script to run both vite.config.ts and vite.config.content.ts
+// make a pull request out of this?
+// 
